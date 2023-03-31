@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <title>Nethulya's web</title>
+
+</head>
+
+<body>
+    <div id="home" class="container">
+        <nav>
+            <div class="logo">nethu<b>-</b></div>
+            <ul class="navItems" id="sidemenu">
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#skill">skills</a></li>
+                <li><a href="#service">services</a></li>
+                <li><a href="#contact">contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/nethulya-sooriarachchi-70539a246"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </nav>
+
+        <div class="wrapper">
+            <div class= "cols cols0">
+                <span class="topline">Hello</span>
+                <h1>I'm <span class="multiText"></span></h1>
+                <p>Welcome to my website! Call me Nethu! I'm just a regular girl with cool vibes and a big enthusiam for tech stuff and computer science. Talk to me about anything!</p>
+                <div class = "btns">
+                    <a href="CV.pdf.pdf"><button>download CV</button></a>
+                <!--<button>download CV</button>   -->
+                    <button>hire me</button>
+                </div>
+            </div>
+            <div class= "cols cols1">
+                <div class="imgbox">
+                    <!---<img src="splash.png" id="splash">
+                    <img src="avatar.png">    --->
+                    <video autoplay="" controls="" loop="" style="width:100%;" src="file:///D:/Portfolio/AH0L-zT75zqakkxa.mp4" type="video/gif">
+                    </video>                                               
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+   <script>
+        var typingEffect = new Typed(".multiText",{
+            strings : ["coder","writer","designer","nethulya"],
+            loop : true,
+            typeSpeed : 100,
+            backSpeed : 80,
+            backDelay : 1500
+        })
+    </script>
+
+    <!----<div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/purple.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>blah blah black sheep have you any wool, yes sir, yes sir, three bags full. one for my master and one for the lil</p>
+    
+            </div>
+        </div>
+    </div> ----->
+
+
+<!--- ABOUT SECTION  -------->
+
+    <div id="about" class="about-section">
+        <div class="inner-container">
+            <h1>About Me</h1>
+            <p class="text">
+                I am Nethulya Aishwarinee Sooriarachchi, an undergraudate student following a bachelor's degree in Data Science at SLTC Research University, Sri Lanka. I am a professional content writer, content creator and designer and I have worked at several international companies across the globe.</p>
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="education">
+                <ul style="background-color: #fdfdfd;">
+                    <li><span>SLTC Research University</span><br>Currently pursuing a bachelor's degree in Data Science</li>
+                    <li><span>Yasodara Vidyalaya</span><br>Succesfully completed G.C.E. A/Ls</li>
+                    <li><span>Campbell International School</span><br>Succesfully completed G.C.E. O/Ls</li>
+                    <li><span>Springfield College</span><br>Succesfully completed secondary education</li>
+                </ul>
+            </div>
+            
+            <div class="tab-contents" id="experience">
+                <ul style="background-color: #fdfdfd;">
+                    <li><span>2022 May - Present</span><br>Work as a content writer at DejaVu Quest Inc. USA</li>
+                    <li><span>2022 April - 2022 September</span><br>Worked at W360 Pte. Ltd. Singapore</li>
+                    <li><span>2022 September - 2023 December</span><br>Worked at Elephant Advisory Pte. Ltd. Australia</li>
+                    <li><span>2020 January - 2021 October</span><br>Worked at Cloud Content Writing Services Sri Lanka</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+    }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<!----------------------Skills-------------------->
+
+    <div id="skill">       
+        <div class="skill-container">
+            <h1> Professional Skills</h1>
+            <p> I am a professional content writer experienced in working with international companies across the world. My career is directed towards the field of computer science and I have exhelled in several computer skills that are necessary to survive in the IT world.</p>
+                <div class="entire">
+
+                    <div class="skills" style="background: #fdfdfd;">
+                        <h2 style="background: #fdfdfd;">HTML</h2>
+                        <div class="progress-bar" data-progress="86">
+                            <div class="html"><span>86%</span></div>
+                        </div>
+
+                        <h2 style="background: #fdfdfd;">CSS</h2>
+                        <div class="progress-bar" data-progress="74">
+                            <div class="css"><span>74%</span></div>
+                        </div>
+
+                        <h2 style="background: #fdfdfd;">Creative Writing</h2>
+                        <div class="progress-bar" data-progress="65">
+                            <div class="javascript"><span>65%</span></div>
+                        </div>
+
+                        <h2 style="background: #fdfdfd;">Language Skills</h2>
+                        <div class="progress-bar" data-progress="80">
+                            <div class="language"><span>80%</span></div>
+                        </div>
+
+                        <h2 style="background: #fdfdfd;">Python</h2>
+                        <div class="progress-bar" data-progress="54">
+                            <div class="python"><span>54%</span></div>
+                        </div>
+
+                        <h2 style="background: #fdfdfd;">Graphic Design</h2>
+                        <div class="progress-bar" data-progress="62">
+                            <div class="react"><span>62%</span></div>
+                        </div>
+
+                    </div>
+                </div>    
+        </div>    
+    </div>   
+    
+    <!---<script src="app.js"></script> ---->
+
+<!---------- MY SERVICES ------->    
+    <div id="service">    
+        <div class="service-container">
+                <h1>My services</h1>
+                <div class="service-row">
+                    <div class="services">
+                        <i class="fas fa-laptop-code"></i>
+                        <h2>Content Writing</h2>
+                        <p>Web content, blog content, and social media content writing</p>
+                    </div>
+
+                    <div class="services">
+                        <i class="fa-solid fa-hashtag"></i>
+                        <h2>Marketing</h2>
+                        <p>Social media handling and outreach</p>
+                    </div>
+
+                    <div class="services">
+                        <i class="fa-solid fa-pencil"></i>
+                        <h2>Graphic</h2>
+                        <p>Graphical content and illustration creation</p>
+                    </div>
+
+                    <div class="services">
+                        <i class="fa-solid fa-pen"></i>
+                        <h2>Language services</h2>
+                        <p>Helping in language learning and Japanese language translation</p>
+                    </div>
+
+                    <div class="services">
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Website content</h2>
+                        <p>Developing web content for client websites</p>
+                    </div>
+
+                    <div class="services">
+                        <i class="fa-solid fa-dragon"></i>
+                        <h2>Pattern designing</h2>
+                        <p>Making design patterns for clothing designs printing</p>
+                    </div>
+
+                    <div class="services">
+                        <i class="fa-solid fa-folder"></i>
+                        <h2>Document handling</h2>
+                        <p>Handling documents, folders, files and e-materials</p>
+                    </div>
+
+                    <div class="services">
+                        <i class="fas fa-network-wired"></i>
+                        <h2>Networking</h2>
+                        <p>Buiding your network and social media accounts</p>
+                    </div>
+
+                </div>
+        </div>
+    </div>
+
+<!------------- CONTACT 
+    <div id="contact">
+        <div style="background: #fdfdfd;" class="contact-container">
+                <div class="row">
+                    <div class="left">
+                        <h1 class="contact-subtitle">Contact me</h1>
+                        <p><i style="background-color: #fdfdfd;" class="fas fa-paper-plane"></i>22ug2-0068@sltc.ac.lk</p>
+                        <p><i style="background-color: #fdfdfd;" class="fas fa-phone-square-alt"></i>074 017 5493</p>
+                    </div>
+                    <div style="padding-top: 10%;"  class="right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your name" required>
+                            <input type="email" name="enmail" placeholder="Your email" required>
+                            <textarea name="Message" row="6" placeholder="Your message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>                    
+                    </div>
+
+                </div>
+        </div>
+
+    </div>       ---------------->
+
+<!--------- CONTACT SECTION RETRY------------
+
+    <div id="contact" class="contact">
+        <div style="background:#fdfdfd;" class="contact-container">
+            <h2 style="background: #fdfdfd;">Get in touch</h2>
+            <p style="background: #fdfdfd;"> send me a message </p>
+
+            <div class="contact-box">
+                <div style="background: #9db4c1;" class="contact-left">
+                    <h3 style="background: #9db4c1;">Send your message</h3>
+                    <form>
+                        <div style="display: flex; background: #9db4c1;" class="input-row">
+                            <div style="background: #9db4c1;" class="input-group">
+                                <label style="background: #9db4c1;">Name</label>
+                                <input type="text" placeholder="Albert Einstein">
+                            </div>
+
+                            <div class="input-group">
+                                <label>Phone</label>
+                                <input type="text" placeholder="0123456789">
+                            </div>
+
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input type="email" placeholder="abc@gmail.com">
+                            </div> 
+
+                            <div style="background: #9db4c1;" class="input-group">
+                                <label style="background: #9db4c1;">Subject</label>
+                                <input type="text" placeholder="Your message title">
+                            </div>
+
+                        </div>
+
+                        --<button style="margin-top: 1%;" type="submit">Send</button>--
+
+                    </form>
+                </div>
+
+                <div style="background: #8374d4;" class="contact-right">
+                    <h3 style="background: #8374d4;">Reach me</h3>
+                    <table style="background: #8374d4;">
+                        <tr>
+                            <td style="background: #8374d4;">Email</td>
+                            <td style="background: #8374d4;">22ug2-0068@sltc.ac.lk</td>
+                        </tr>
+                        <tr>
+                            <td style="background: #8374d4;">Phone number</td>
+                            <td style="background: #8374d4;">074 017 5493</td>
+                        </tr>
+                    </table>                    
+                </div>
+
+            </div>
+
+        </div>
+    </div>  -->
+
+    <!-- ---------------contact----------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title" style="font-size: 3em; padding-left: 70px;">Contact Me</h1>
+                <p><i style="padding-left: 70px;" class="fa-sharp fa-solid fa-envelope"></i>nethu.nov.2004@gmail.com</p>
+                <p><i style="padding-left: 70px;" class="fa-solid fa-phone-volume"></i>+94 74 017 5493</p>
+               
+            </div>
+            <div class="contact-right"></div>
+            <form name="submit-to-google-sheet" style="padding-left: 70px; padding-right: 50px;">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="E-mail Address" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <div class="Submit">
+                    <button type="submit" class="btn btn2">Submit</button>
+
+                </div>
+                
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+    <div class="copyright">
+        <p style="text-align: center; margin-top: -10%; padding-bottom: 0%;">Copyright ©. NETHULYA AISHWARINEE SOORIARACHCHI <i class="cright"></i></p>
+    </div>
+</div>
+
+
+
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxsGrCsoKgSh2wphv2OPsklbsoo4qJA1yiI3lyHnTSaXXUcANCJsQnS4CnFp59oOzQa/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        
+        })
+
+        .catch(error => console.error('Error!', error.message))
+        
+    })
+</script>
+
+</body>
+</html>
